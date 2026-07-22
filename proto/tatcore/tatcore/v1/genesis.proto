@@ -1,0 +1,17 @@
+syntax = "proto3";
+package tatcore.tatcore.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "tatcore/tatcore/v1/params.proto";
+
+option go_package = "github.com/alltest0777/tatcore/x/tatcore/types";
+
+// GenesisState defines the tatcore module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

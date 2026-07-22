@@ -1,0 +1,14 @@
+syntax = "proto3";
+package tatcore.tatcore.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/alltest0777/tatcore/x/tatcore/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "tatcore/x/tatcore/Params";
+  option (gogoproto.equal) = true;
+  
+}
