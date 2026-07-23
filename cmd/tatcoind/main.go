@@ -8,7 +8,7 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
 	"github.com/alltest0777/tatcore/app"
-	"github.com/alltest0777/tatcore/cmd/tatcored/cmd"
+	"github.com/alltest0777/tatcore/cmd/tatcoind/cmd"
 )
 
 func main() {
