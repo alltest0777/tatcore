@@ -7,29 +7,39 @@ build:
   binary: tatcoind
 
 accounts:
-- name: alice
-  coins:
-  - 200000000utat
+  - name: validator
+    coins:
+      - 100000000utat
 
-- name: bob
-  coins:
-  - 100000000utat
+  - name: foundation
+    coins:
+      - 100000000utat
+
+  - name: ecosystem
+    coins:
+      - 100000000utat
+
+  - name: community
+    coins:
+      - 100000000utat
+
+  - name: airdrop
+    coins:
+      - 100000000utat
+
+  - name: faucet
+    coins:
+      - 100000000utat
 
 client:
   openapi:
     path: docs/static/openapi.json
 
 faucet:
-  name: bob
+  name: faucet
   coins:
-  - 100000utat
+    - 100000utat
 
 validators:
-- name: alice
-  bonded: 100000000utat
-
-- name: validator1
-  bonded: 200000000utat
-
-- name: validator2
-  bonded: 100000000utat
+  - name: validator
+    bonded: 100000000utat
