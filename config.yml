@@ -3,33 +3,51 @@ validation: sovereign
 default_denom: utat
 genesis:
   chain_id: tat-1
+  app_state:
+    bank:
+      denom_metadata:
+        - description: "TatCoin native token"
+          denom_units:
+            - denom: utat
+              exponent: 0
+              aliases:
+                - microtat
+            - denom: TAT
+              exponent: 6
+              aliases: []
+          base: utat
+          display: TAT
+          name: TatCoin
+          symbol: TAT
+          uri: ""
+          uri_hash: ""
 build:
   binary: tatcoind
 
 accounts:
   - name: validator
     coins:
-      - 100000000utat
+      - 10000000000000utat
 
   - name: foundation
     coins:
-      - 100000000utat
+      - 200000000000000utat
 
   - name: ecosystem
     coins:
-      - 100000000utat
+      - 300000000000000utat
 
   - name: community
     coins:
-      - 100000000utat
+      - 150000000000000utat
 
   - name: airdrop
     coins:
-      - 100000000utat
+      - 240000000000000utat
 
   - name: faucet
     coins:
-      - 100000000utat
+      - 100000000000000utat
 
 client:
   openapi:
@@ -42,4 +60,5 @@ faucet:
 
 validators:
   - name: validator
-    bonded: 100000000utat
+    bonded: 10000000000000utat
+
